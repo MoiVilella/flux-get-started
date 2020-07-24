@@ -55,11 +55,10 @@ spec:
         - --level=info
         - --random-delay=false
         - --random-error=false
+        - --ui-message='Welcome to my Flux 2'
         env:
         - name: PODINFO_UI_COLOR
           value: "#34577c"
-        - name: PODINFO_UI_MESSAGE
-          value: "Welcome to flux"
         livenessProbe:
           httpGet:
             path: /healthz
